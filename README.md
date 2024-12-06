@@ -109,3 +109,56 @@ Built with:
 3. Commit your changes
 4. Push to the branch
 5. Create a new Pull Request
+
+   Object-Oriented Design
+Class Inheritance
+
+PlayerClass: Base class for all player types
+
+AIClass: Extends PlayerClass with basic AI functionality
+
+AIMediumClass: Extends AIClass with intermediate strategies
+
+AIHardClass: Extends AIMediumClass with advanced algorithms
+
+
+
+
+
+
+
+Encapsulation
+
+BoardArray: Encapsulates board state and win condition logic
+GameInfo: Encapsulates game state and UI data
+History: Encapsulates player statistics and file operations
+BoardSpace: Encapsulates individual space behavior and state
+
+Polymorphism
+
+GetMove(): Overridden by each AI class with different strategies
+UpdateSpaceState(): Virtual method for handling piece placement
+CheckWinState(): Polymorphic win condition checking
+
+Abstraction
+
+Player movement system
+Win condition validation
+Board state management
+AI decision making
+Game history tracking
+
+Design Patterns
+
+Singleton: GameInfo for global state
+Strategy: Different AI difficulty implementations
+Observer: Board state updates
+Factory: Player object creation
+
+Key OOP Benefits
+
+Modular AI difficulty system
+Extensible player classes
+Encapsulated game logic
+Maintainable codebase
+Easy to add new features
